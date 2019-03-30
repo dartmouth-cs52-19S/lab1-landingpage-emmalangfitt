@@ -13,51 +13,90 @@ body {
     padding: 0;
 }
 
+nav a {
+    color: #fb004d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 .block-row {
     display: flex;
 }
 
 .colorblock {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     width: 50vw;
+    padding: 6vw;
+    justify-content: center;
+    align-items: center;
 }
 
 #top-yellow-block {
-    background-color: #fec93d;
+    background-color: #FFD14D;
     font-size: 3vw;
+    flex-direction: column;
 }
 
+#top-yellow-block button {
+    font-size: 50%;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+#top-yellow-block h1 {
+    margin-bottom: 3vh;
+}
+
+
 #pink-block, footer {
-    background-color: #fb003d;
+    background-color: #fb004d;
 }
 
 #blue-block {
-    background-color: #0b1eee;
+    background-color: #0E3FF2;
 }
 
 #white-block {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #black-block {
     background-color: #000000;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #ffffff;
 }
 
 #bottom-yellow-block {
-    background-color: #fec93d;
+    background-color: #FFD14D;
 }
 
+/*******************
+padding values lifted from original site at houseparty.com
+********************/
 footer {
     color: #ffffff;
+    display: flex;
+    padding: 2.9em;
+    padding-bottom: 2em;
+    font-size: .75em;
 } 
 
-nav a {
-    color: #fb003d;
-    text-decoration: none;
-    font-weight: 500;
+/*******************
+values lifted from original site at houseparty.com
+********************/
+.footer-col {
+    width: 11em;
+    margin-right: 1.4em;
+    margin-bottom: 1em;
+}
+
+/*******************
+code lifted from original site at houseparty.com
+to just put white border on inner columns
+********************/
+.footer-col:not(:last-child) {
+    border-right: 1px solid white;
 }
 
 footer a {
@@ -65,16 +104,50 @@ footer a {
     text-decoration: none;
 }
 
+footer h5 {
+    margin: 0;
+    margin-bottom: 1em; 
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .35em;
+}
+
 /*******************
-padding, font-size, and border-radius values lifted from 
+padding and text-align values lifted from 
 original site at houseparty.com
 ********************/
+#members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.member-box button {
+    margin-top: 2vh;
+}
+
+img {
+    height: 12vw;
+    border: 1px solid #dddddd;
+    padding: 4px;
+    box-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+/*******************
+padding, font-size, and border-radius, and box-shadow values
+lifted from  original site at houseparty.com
+********************/
 button {
-    height: 8vh;
     padding: 1em 2.5em;
     border: none;
     border-radius: 3em;
-    background-color: #fb003d;
+    background-color: #fb004d;
     color: #ffffff;
     font-size: 100%;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
 }
