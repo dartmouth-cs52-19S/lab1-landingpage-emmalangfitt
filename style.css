@@ -13,10 +13,59 @@ body {
     padding: 0;
 }
 
+nav {
+    background-color: #ffffff;
+    display: flex;
+    height: 6vh; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-start {
+    flex-grow: 4;
+    margin-left: 2vw;
+}
+
+#nav-start a {
+    font-size: 150%;
+    transition: all .1s ease-in;
+}
+
+#nav-start a:hover {
+    color: #000000;
+}
+
+#nav-end {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-end a {
+    transition: all .1s ease-in;
+}
+
+#nav-end a:hover {
+    color: #0E3FF2;
+    transform: scale(1.01);
+}
+
+#music-icon {
+    padding-right: .3vw;
+}
+
+input[type=text] {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fb004d;
+    border-radius: 50px;
+    padding: .4vw;
+}
+
 nav a {
     color: #fb004d;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 120%;
 }
 
 .block-row {
@@ -96,7 +145,7 @@ code lifted from original site at houseparty.com
 to just put white border on inner columns
 ********************/
 .footer-col:not(:last-child) {
-    border-right: 1px solid white;
+    border-right: 1px solid #ffffff;
 }
 
 footer a {
@@ -138,9 +187,15 @@ img {
     box-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.1);
 }
 
+.gif {
+    border: none;
+    box-shadow: none;
+    height: 55vh;
+}
+
 /*******************
-padding, font-size, and border-radius, and box-shadow values
-lifted from  original site at houseparty.com
+padding, font-size, and border-radius, transition and box-shadow
+values lifted from  original site at houseparty.com
 ********************/
 button {
     padding: 1em 2.5em;
@@ -150,4 +205,24 @@ button {
     color: #ffffff;
     font-size: 100%;
     box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+}
+
+/*******************
+hover state lifted from  original site at houseparty.com
+********************/
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.35em 0.85em rgba(0, 0, 0, 0.2);
+}
+
+/*******************
+position, margin, and box-shadow values
+lifted from  original site at houseparty.com
+********************/
+.sticky-button {
+    position: fixed;
+    margin-left: 1em;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
 }
