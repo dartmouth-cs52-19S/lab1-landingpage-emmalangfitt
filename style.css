@@ -287,6 +287,28 @@ lifted from  original site at houseparty.com
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
 }
 
+#mobile-footer {
+    display: none;
+    background-color: #fb004d;
+}
+
+#mobile-footer div {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+#mobile-footer a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: 900;
+    padding-left: 2vw;
+}
+
+#mobile-footer div:not(:first-child) {
+    border-top: solid 1px #ffffff;
+}
+
 @media only screen and (max-width: 850px) {
     .block-row {
         flex-direction: column;
@@ -349,5 +371,14 @@ lifted from  original site at houseparty.com
 
     input[type=checkbox]:checked ~ nav i{
         color: #FFD14D;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #mobile-footer {
+        display: flex;
+        flex-direction: column;
     }
 }
