@@ -170,10 +170,16 @@ original site at houseparty.com
 ********************/
 #members {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 4em 0;
     text-align: center;
+    padding: 8vh 0;
+}
+
+.member-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .member-box button {
@@ -181,7 +187,7 @@ original site at houseparty.com
 }
 
 img {
-    height: 12vw;
+    width: 20vw;
     border: 1px solid #dddddd;
     padding: 4px;
     box-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.1);
@@ -190,7 +196,8 @@ img {
 .gif {
     border: none;
     box-shadow: none;
-    height: 55vh;
+    height: 30vw;
+    width: auto;
 }
 
 /*******************
@@ -225,4 +232,42 @@ lifted from  original site at houseparty.com
     margin-left: 1em;
     margin-top: 1em;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
+}
+
+@media only screen and (max-width: 850px) {
+    .block-row {
+        flex-direction: column;
+    }
+
+    .colorblock {
+        width: 100vw;
+        padding: 0vw;
+    }
+
+    #top-yellow-block, #white-block, #black-block {
+        font-size: 4vw;
+    }
+
+    #white-block h1 {
+        padding-left: 3vw;
+    }
+
+    .gif {
+        height: 60vw;
+    }
+
+    #members {
+        flex-wrap: wrap;
+        padding: 6vh 0;
+    }
+
+    .member-box {
+        width: 50%;
+        height: auto;
+        padding: 3vh 0;
+    }
+
+    .member-box button {
+        font-size: 80%;
+    }
 }
