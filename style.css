@@ -21,6 +21,10 @@ nav {
     align-items: center;
 }
 
+#nav-hamburger {
+    visibility: hidden; 
+}
+
 #nav-start {
     flex-grow: 4;
     margin-left: 2vw;
@@ -270,4 +274,21 @@ lifted from  original site at houseparty.com
     .member-box button {
         font-size: 80%;
     }
+
+    #nav-end {
+        visibility: hidden; 
+    }
+
+    #nav-hamburger {
+        visibility: visible;
+        color: #fb004d;
+        padding-right: 3vw;
+        font-size: 140%;
+        transition: all .1s ease-in;
+    }
+
+    #nav-hamburger a:hover {
+        color: #0E3FF2;
+    }
+
 }
