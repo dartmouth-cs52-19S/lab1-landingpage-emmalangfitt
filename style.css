@@ -22,8 +22,46 @@ nav {
 }
 
 #nav-hamburger {
-    visibility: hidden; 
+    display: none;
 }
+
+#menu-toggle {
+    position: absolute;
+    right: 3.5vw;
+    top: 1.5vh;
+    justify-content: flex-end;
+    opacity: 0;
+}
+
+#menu {
+    position: absolute;
+    opacity: 0;
+    right: 0px;
+    background-color: #fb004d;
+    text-align: center;
+    width: 100%;
+    height: 0px;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+}
+
+#menu li, #menu a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 1.8vh 0;
+    transition: all .1s ease-in;
+}
+
+#menu a:hover {
+    color: #0E3FF2;
+}
+
+#menu li:not(:first-child) {
+    border-top: solid 2px #FFD14D;
+}
+
 
 #nav-start {
     flex-grow: 4;
@@ -280,7 +318,7 @@ lifted from  original site at houseparty.com
     }
 
     #nav-hamburger {
-        visibility: visible;
+        display: block;
         color: #fb004d;
         padding-right: 3vw;
         font-size: 140%;
@@ -291,4 +329,13 @@ lifted from  original site at houseparty.com
         color: #0E3FF2;
     }
 
+    /* https://davidwalsh.name/css-slide */
+    input[type=checkbox]:checked ~ #menu {
+        opacity: 1;
+        height: 26vh;
+    }
+
+    input[type=checkbox]:checked ~ nav i{
+        color: #FFD14D;
+    }
 }
