@@ -41,7 +41,7 @@ nav {
     text-align: center;
     width: 100%;
     height: 0px;
-    z-index: 100;
+    z-index: 0;
     transition: all .3s ease-in-out;
 }
 
@@ -153,9 +153,20 @@ nav a {
 }
 
 #black-block {
+    flex-direction: column;
     background-color: #000000;
     font-size: 2.5vw;
     color: #ffffff;
+}
+
+#black-block a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+#black-block a:hover {
+    color: #fb004d;
 }
 
 #bottom-yellow-block {
@@ -290,7 +301,7 @@ lifted from  original site at houseparty.com
         font-size: 4vw;
     }
 
-    #white-block h1 {
+    #white-block h1, #black-block h1 {
         padding-left: 3vw;
     }
 
@@ -331,6 +342,7 @@ lifted from  original site at houseparty.com
 
     /* https://davidwalsh.name/css-slide */
     input[type=checkbox]:checked ~ #menu {
+        z-index: 100;
         opacity: 1;
         height: 26vh;
     }
