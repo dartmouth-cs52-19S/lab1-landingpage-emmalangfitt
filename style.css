@@ -1,3 +1,6 @@
+/*******************
+WHOLE SITE FORMATTING
+********************/
 h1, h3, h5, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -13,6 +16,28 @@ body {
     padding: 0;
 }
 
+/** padding, font-size, and border-radius, transition and box-shadow
+values lifted from  original site at houseparty.com **/
+button {
+    padding: 1em 2.5em;
+    border: none;
+    border-radius: 3em;
+    background-color: #fb004d;
+    color: #ffffff;
+    font-size: 100%;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+}
+
+/** hover state lifted from  original site at houseparty.com **/
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.35em 0.85em rgba(0, 0, 0, 0.2);
+}
+
+/**************
+NAV FORMATTING 
+***************/
 nav {
     background-color: #ffffff;
     display: flex;
@@ -21,11 +46,57 @@ nav {
     align-items: center;
 }
 
-#nav-hamburger {
+nav a {
+    color: #fb004d;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 120%;
+}
+
+nav div:last-child {
     display: none;
 }
 
-#menu-toggle {
+nav div:first-child {
+    flex-grow: 4;
+    margin-left: 2vw;
+}
+
+nav div:first-child a {
+    font-size: 150%;
+    transition: all .1s ease-in;
+}
+
+nav div:first-child a:hover {
+    color: #000000;
+}
+
+nav div:nth-child(2) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div:nth-child(2) a {
+    transition: all .1s ease-in;
+}
+
+nav div:nth-child(2) a:hover {
+    color: #0E3FF2;
+    transform: scale(1.01);
+}
+
+input[type=text] {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fb004d;
+    border-radius: 50px;
+    padding: .4vw;
+}
+
+/**************
+HAMBURGER HACK
+***************/
+input[type=checkbox] {
     position: absolute;
     right: 3.5vw;
     top: 1.5vh;
@@ -62,56 +133,34 @@ nav {
     border-top: solid 2px #FFD14D;
 }
 
-
-#nav-start {
-    flex-grow: 4;
-    margin-left: 2vw;
-}
-
-#nav-start a {
-    font-size: 150%;
-    transition: all .1s ease-in;
-}
-
-#nav-start a:hover {
-    color: #000000;
-}
-
-#nav-end {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-around;
-}
-
-#nav-end a {
-    transition: all .1s ease-in;
-}
-
-#nav-end a:hover {
-    color: #0E3FF2;
-    transform: scale(1.01);
-}
-
-#music-icon {
+/**************
+MISCELLANEOUS
+***************/
+button i {
     padding-right: .3vw;
 }
 
-input[type=text] {
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #fb004d;
-    border-radius: 50px;
-    padding: .4vw;
+/** position, margin, and box-shadow values
+lifted from  original site at houseparty.com **/
+#sticky-button {
+    position: fixed;
+    margin-left: 1em;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
 }
 
-nav a {
-    color: #fb004d;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 120%;
-}
-
+/********************
+COLORBLOCK FORMATTING
+*********************/
 .block-row {
     display: flex;
+}
+
+.block-row img {
+    border: none;
+    box-shadow: none;
+    height: 30vw;
+    width: auto;
 }
 
 .colorblock {
@@ -138,7 +187,6 @@ nav a {
 #top-yellow-block h1 {
     margin-bottom: 3vh;
 }
-
 
 #pink-block, footer {
     background-color: #fb004d;
@@ -173,54 +221,17 @@ nav a {
     background-color: #FFD14D;
 }
 
-/*******************
-padding values lifted from original site at houseparty.com
-********************/
-footer {
-    color: #ffffff;
+/*************************
+MEMBER SECTION FORMATTING
+**************************/
+.member-box {
     display: flex;
-    padding: 2.9em;
-    padding-bottom: 2em;
-    font-size: .75em;
-} 
-
-/*******************
-values lifted from original site at houseparty.com
-********************/
-.footer-col {
-    width: 11em;
-    margin-right: 1.4em;
-    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*******************
-code lifted from original site at houseparty.com
-to just put white border on inner columns
-********************/
-.footer-col:not(:last-child) {
-    border-right: 1px solid #ffffff;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-footer h5 {
-    margin: 0;
-    margin-bottom: 1em; 
-}
-
-footer ul {
-    padding: 0;
-    margin: 0;
-    margin-bottom: .35em;
-}
-
-/*******************
-padding and text-align values lifted from 
-original site at houseparty.com
-********************/
+/** padding and text-align values lifted from original site
+at houseparty.com **/
 #members {
     display: flex;
     justify-content: space-around;
@@ -246,47 +257,50 @@ img {
     box-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.1);
 }
 
-.gif {
-    border: none;
-    box-shadow: none;
-    height: 30vw;
-    width: auto;
-}
-
-/*******************
-padding, font-size, and border-radius, transition and box-shadow
-values lifted from  original site at houseparty.com
-********************/
-button {
-    padding: 1em 2.5em;
-    border: none;
-    border-radius: 3em;
-    background-color: #fb004d;
+/*****************
+FOOTER FORMATTING
+******************/
+footer a {
     color: #ffffff;
-    font-size: 100%;
-    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
-    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    text-decoration: none;
 }
 
-/*******************
-hover state lifted from  original site at houseparty.com
-********************/
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0.35em 0.85em rgba(0, 0, 0, 0.2);
+/** padding values lifted from original site at houseparty.com **/
+footer {
+    color: #ffffff;
+    display: flex;
+    padding: 2.9em;
+    padding-bottom: 2em;
+    font-size: .75em;
+} 
+
+/** padding values lifted from original site at houseparty.com **/
+.footer-col {
+    width: 11em;
+    margin-right: 1.4em;
+    margin-bottom: 1em;
 }
 
-/*******************
-position, margin, and box-shadow values
-lifted from  original site at houseparty.com
-********************/
-.sticky-button {
-    position: fixed;
-    margin-left: 1em;
-    margin-top: 1em;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
+/** code lifted from original site at houseparty.com 
+to just put white border on inner columns **/
+.footer-col:not(:last-child) {
+    border-right: 1px solid #ffffff;
 }
 
+footer h5 {
+    margin: 0;
+    margin-bottom: 1em; 
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .35em;
+}
+
+/************************
+MOBILE FOOTER FORMATTING
+*************************/
 #mobile-footer {
     display: none;
     background-color: #fb004d;
@@ -309,6 +323,9 @@ lifted from  original site at houseparty.com
     border-top: solid 1px #ffffff;
 }
 
+/**********************************
+SMALL SCREEN MEDIA QUERY FORMATTING
+***********************************/
 @media only screen and (max-width: 850px) {
     .block-row {
         flex-direction: column;
@@ -327,7 +344,7 @@ lifted from  original site at houseparty.com
         padding-left: 3vw;
     }
 
-    .gif {
+    .block-row img {
         height: 60vw;
     }
 
@@ -346,11 +363,11 @@ lifted from  original site at houseparty.com
         font-size: 80%;
     }
 
-    #nav-end {
+    nav div:nth-child(2) {
         visibility: hidden; 
     }
 
-    #nav-hamburger {
+    nav div:last-child {
         display: block;
         color: #fb004d;
         padding-right: 3vw;
@@ -358,11 +375,11 @@ lifted from  original site at houseparty.com
         transition: all .1s ease-in;
     }
 
-    #nav-hamburger a:hover {
+    nav div:last-child a:hover {
         color: #0E3FF2;
     }
 
-    /* https://davidwalsh.name/css-slide */
+    /* height-changing inspiration from https://davidwalsh.name/css-slide */
     input[type=checkbox]:checked ~ #menu {
         z-index: 100;
         opacity: 1;

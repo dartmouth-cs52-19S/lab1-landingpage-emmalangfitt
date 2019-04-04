@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
     <header>
+        <title>B D E</title>
         <link type="text/css" rel="stylesheet" href="style.css"/>
         <!-- include icons from Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- Google Fonts -->
+        <!-- include fonts from Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
-        <title>B D E</title>
+        <!-- from Ijemma! to get sizing to work on phone screens -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </header>
+
     <body>
-        <input type="checkbox" id="menu-toggle">
+        <!-- checkbox hack for hamburger menu -->
+        <input type="checkbox">
+
         <nav>
-            <div id="nav-start">
+            <div>
                 <a href="">B D E</a>
             </div>
-            <div id="nav-end">
+
+            <div>
                 <a href="#listen">Listen</a>
-                <a href="#members">About</a>
+                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="">Shop</a>
+                <a href="#members">Members</a>
                 <input placeholder="search..." type="text">
             </div>
 
-            <div id="nav-hamburger">
+            <div>
                 <a href=""><i class="fas fa-bars"></i></a>
             </div>
         </nav>
 
+        <!-- hidden by hamburger menu checkbox -->
         <div id="menu">
             <li><a href="#listen">Listen</a></li>
-            <li><a href="#members">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="">Shop</a></li>
+            <li><a href="#members">Members</a></li>
         </div>
 
-        <button class="sticky-button">
-            <i id="music-icon" class="fas fa-music"></i>
+        <button id="sticky-button">
+            <i class="fas fa-music"></i>
             RSVP TO OUR SHOW
         </button>
 
@@ -47,13 +54,13 @@
                 </div>
             </div>
             <div class="colorblock" id="pink-block">
-                <img class="gif" src="imgs/lightning.gif">
+                <img src="imgs/lightning.gif">
             </div>
         </div>
 
-        <div class="block-row">
+        <div class="block-row" id="about">
             <div class="colorblock" id="blue-block">
-                <img class="gif" src="imgs/glasses.gif">
+                <img src="imgs/glasses.gif">
             </div>
             <div class="colorblock" id="white-block">
                 <h1>ft. Alex Nashe Mitch Davis Kevin Sriram Matt</h1>
@@ -68,7 +75,7 @@
                 
             </div>
             <div class="colorblock" id="bottom-yellow-block">
-                <img class="gif" src="imgs/soundon.gif">
+                <img src="imgs/soundon.gif">
             </div>
         </div>
 
@@ -95,7 +102,7 @@
             <div class="footer-col">
                 <h5>SITE MAP</h5>
                 <ul><a href="">About</a></ul>
-                <ul><a href="">Shop</a></ul>
+                <ul><a href="">Members</a></ul>
                 <ul><a href="">Listen</a></ul>
             </div>
             <div class="footer-col">
@@ -106,6 +113,7 @@
             </div>
         </footer>
 
+        <!-- hidden unless on narrow screen -->
         <div id="mobile-footer">
             <div><a href="#mobile-footer">SITE MAP <i class="fas fa-caret-down"></i></a></div>
             <div><a href="#mobile-footer">CONNECT <i class="fas fa-caret-down"></i></a></div>
