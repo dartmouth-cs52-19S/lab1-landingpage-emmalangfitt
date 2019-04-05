@@ -4,7 +4,7 @@
 I used [Houseparty.com](https://houseparty.com/) as inspiration to create a website for the student band *BDE*. I really liked the colors and blocky structure of the original site, so I kept most of the design the same and just replaced the content with information and photos related to the group. I also added in a few lab-specific elements like the top navigation bar and size-responsive menu. My version is hosted [here](https://dartmouth-cs52-19s.github.io/lab1-landingpage-emmalangfitt/).
 
 ## Process
-The lab first asked us to use pure HTML to form the structure of the site. With absolutely no styling and just about 100 lines of code, my landing page looked like this: 
+The lab first asked us to use just HTML to form the structure of the site. With absolutely no styling and just about 100 lines of code, my landing page looked like this: 
 
 <p align="center">
   <img src="resources/HTMLScreenCap.png" title="HTML Only">
@@ -45,6 +45,6 @@ Overall, I created a landing page mockup with the follwing features:
 * call-to-actions, links, and buttons with hover states
 * local links to different sections of the page
 * a non-functional text-input searchbar
-* a responsive resizing footer with non-function drop-downs 
+* a responsive resizing footer with non-functional drop-downs 
 
-One thing I'd like to fix in the future is the CSS checkbox hack. It worked, but the transition wasn't smooth since the text appears before the menu full drops down and the icon's hover effect is masked by the checkbox. I think I could find a sneaky way to make the icon change color when the checkbox is hovered over, but I couldn't get this to work. However, the checkbox works as a rough approximate of what I'd like the menu to look like, and it was cool to do it with pure CSS.
+One thing I'd like to fix in the future is the CSS checkbox hack. It worked, but the transition wasn't smooth since the text appears before the menu full drops down and the icon's hover effect is masked by the checkbox. I think I could find a sneaky way to make the icon change color when the checkbox is hovered over, but I couldn't get this to work by the lab's due date. However, the checkbox works as a rough approximate of what I'd like the menu to look like, and it was cool to do it with pure CSS.
