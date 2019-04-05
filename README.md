@@ -28,7 +28,22 @@ The last step of the lab was to make the page responsive to window resizing, so 
   <img src="resources/SkinnyVersion.png" width="300" title="Narrow Version">
 </p>
 
-From here I cleaned up the code, touched up a few styling elements, and hosted the site!
+When you click the hamburger icon, a menu drops down like this:
+
+<p align="center">
+  <img src="resources/MenuVideomov" width="300" title="Menu Video">
+</p>
+
+From here I cleaned up the code, touched up a few styling elements, and hosted the site!  
 
 ## Results
+Overall, I created a landing page mockup with the follwing features:
+
+* a responsive navigation menu that turns into a clickable hamburger icon when the screen is narrow
+* an animated drop-down menu that responds to the hamburger click (via the CSS checkbox hack)
+* expanding gifs and images within the colorblocks
+* call-to-actions, links, and buttons with hover states
+* local links to different sections of the page
+* a non-functional text-input searchbar
+* a responsive resizing footer with non-function drop-downs 
 
