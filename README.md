@@ -31,7 +31,7 @@ The last step of the lab was to make the page responsive to window resizing, so 
 When you click the hamburger icon, a menu drops down like this:
 
 <p align="center">
-  <img src="resources/MenuVideomov" width="300" title="Menu Video">
+  <img src="resources/menu.gif" width="300" title="Menu Gif">
 </p>
 
 From here I cleaned up the code, touched up a few styling elements, and hosted the site!  
@@ -47,3 +47,4 @@ Overall, I created a landing page mockup with the follwing features:
 * a non-functional text-input searchbar
 * a responsive resizing footer with non-function drop-downs 
 
+One thing I'd like to fix in the future is the CSS checkbox hack. It worked, but the transition wasn't smooth since the text appears before the menu full drops down and the icon's hover effect is masked by the checkbox. I think I could find a sneaky way to make the icon change color when the checkbox is hovered over, but I couldn't get this to work. However, the checkbox works as a rough approximate of what I'd like the menu to look like, and it was cool to do it with pure CSS.
