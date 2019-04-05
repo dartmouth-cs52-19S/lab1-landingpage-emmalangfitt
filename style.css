@@ -143,6 +143,7 @@ button i {
 /** position, margin, and box-shadow values
 lifted from  original site at houseparty.com **/
 #sticky-button {
+    background-color: #0E3FF2;
     position: fixed;
     margin-left: 1em;
     margin-top: 1em;
